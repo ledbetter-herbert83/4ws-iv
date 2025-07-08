@@ -9,6 +9,7 @@ jobs:
     timeout-minutes: 360
     steps:
       - uses: actions/checkout@v2
-        name: Server build start
+      - name: Setup App
+        working-directory: ./runner
         run: |
             echo OK
